@@ -8,7 +8,7 @@ async function postImage({ image, description }) {
     formData.append("image", image);
     formData.append("description", description);
 
-    const result = await axios.post("13.126.19.195:7000/images", formData, {
+    const result = await axios.post("13.232.39.133:8080/images", formData, {
         headers: { "Content-Type": "multipart/form-data" },
     });
     return result.data;
@@ -53,7 +53,7 @@ function App() {
             ))}
 
             <img
-                src="13.126.19.195:7000/images/052f61c6fbddc1bfda9abb1ef9537881"
+                src="13.232.39.133:8080/images/052f61c6fbddc1bfda9abb1ef9537881"
                 alt=""
             ></img>
         </div>
